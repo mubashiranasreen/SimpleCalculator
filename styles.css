@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+body {
+    padding: 60px;
+}
+
+.calculator {
+    padding: 20px;
+    border-radius: 1em;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background-color: #a3a8c5;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px, rgba(0, 0, 0, 0.3) 0px 3px 3px;
+}
+
+.display-box {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    border: none;
+    color: #333;
+    border-radius: 5px;
+    width: 95%;
+    height: 65%;
+}
+
+#btn {
+    background-color: DarkCyan;
+    border: none;
+}
+
+#btn:hover {
+    background-color: rgb(142, 72, 211);
+    border: none;
+}
+
+input[type=button] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #4a47a3;
+    color: white;
+    border: none;
+    width: 90%;
+    border-radius: 5px;
+    height: 60%;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px 0px;
+}
+
+input[type=button]:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 4px 0px;
+}
+
+input:active[type=button] {
+    background: #3c3a80;
+    -webkit-box-shadow: inset 0px 0px 5px #b1b1b1;
+    -moz-box-shadow: inset 0px 0px 5px #b1b1b1;
+    box-shadow: inset 0px 0px 5px #b1b1b1;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 1px 0px inset, rgba(255, 255, 255, 0.3) 0px 1px 1px 0px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Alkatra', cursive;
+}
+
+p a{
+    text-decoration: none;
+}
+
+a[data-tooltip] {
+    position: relative;
+}
+
+a[data-tooltip]:hover:after {
+    content: attr(data-tooltip);
+    border-radius: 5px;
+    font-size: 12px;
+    background: #4e4b4b;
+    color: #fff;
+    padding: 4px 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    body {
+        margin-top: 80px;
+    }
+    .calculator {
+        width: 100%;
+    }
+    #btn-side {
+        padding: 8px;
+    }
+}
